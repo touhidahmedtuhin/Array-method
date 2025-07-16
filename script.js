@@ -40,14 +40,18 @@
 // console.log(newArr);
 //...............................................................
 // Sum of all numbers from 1 to n using reduce method
-// let n = prompt('enter a number');
-// let arr = [];
-// for(let i =1 ; i <=n ; i++){
-//     arr[i-1] = i; // 1(i-1) = 1, 2(i-1) = 2, 3(i-1) = 3 
-// }
-// console.log(arr);
+let n = prompt('enter a number');
+let arr = [];
+for(let i =1 ; i <=n ; i++){
+    arr[i-1] = i; // 1(i-1) = 1, 2(i-1) = 2, 3(i-1) = 3 
+}
+console.log(arr);
+let newAr = arr.reduce((prev , curr) => {
+  return prev + curr;
+})
+console.log(`Sum of all numbers is: ${newAr}`);
 
-// let newAr = arr.reduce((prev , curr) => {
-//   return prev + curr;
-// })
-// console.log(`Sum of all numbers is: ${newAr}`);
+let factorial = arr.reduce((prev , curr) => {
+  return prev * curr;
+})
+console.log(`Factorial is: ${factorial}`);
